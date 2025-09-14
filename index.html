@@ -9,8 +9,11 @@
 </head>
 <body class="bg-[#effaf3]">
     <header class="bg-[#e1ede6]">
-        <div class="w-[90%] m-auto flex justify-between items-center p-[20px_0_30px_0] ">
-            <img src="./img/logo.svg" alt="">
+        <div class="w-[90%] m-auto justify-between items-center p-[20px_0_30px_0] flex flex-col md:flex-row">
+            <div>
+                <img src="./img/logo.svg" alt="">
+            </div>
+            
             <nav>
             <ul class="flex gap-[30px] items-center font-family">
                 <li><a class="relative inline-block hover:text-[#598d66] after:absolute after:bottom-0 after:right-0 after:h-[2px] after:w-0 after:bg-[#598d66] after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full" href="#">Репродукции</a></li>
@@ -24,7 +27,7 @@
         </div>
     </header>
 
-    <section class="w-[90%] m-auto flex justify-between items-center">
+    <section class="w-[90%] m-auto justify-between items-center flex flex-col md:flex-row">
         <img src="./img/img1.svg" alt="" class="transition duration-300 transform hover:scale-105">
         <div>
             <h1 class="font-medium text-6xl leading-[110%] text-[#2c2d35] font-family mb-[40px]">Реплики картин <br> от <span class="text-[#598d66]"> Ink. House</span></h1>
@@ -34,7 +37,7 @@
     </section>
     
     <section class="w-[90%] m-auto mt-[100px]">
-        <div class="flex justify-between">
+        <div class="flex justify-between flex-wrap gap-4">
             <div>
                 <h1 class="font-medium text-[40px] leading-[110%] text-[#2c2d35] font-family mb-[40px]">Репродукции</h1>
             </div>
@@ -45,8 +48,8 @@
             </div>
         </div>
 
-        <div class="w-[90%] m-auto flex justify-between mt-[30px]">
-            <div class="w-[350px] h-[730px] bg-[#e1ede6] p-[20px_20px]">
+        <div class="w-[90%] m-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[30px] mt-[30px]">
+            <div class="w-[350px] h-[730px] bg-[#e1ede6] p-[20px_20px]"> 
                 <img src="./img/img2.svg" alt="" class="transition duration-300 transform hover:scale-105">
                 <p class="font-family font-medium text-lg text-[#86928b] mt-[20px]">Марсель Руссо</p>
                 <h1 class="font-family font-medium text-3xl text-[#2c2d35] mt-[10px]">Охота Амура</h1>
@@ -73,7 +76,7 @@
         </div>
     </section>
 
-    <section class="w-[95%] m-auto">
+    <section class="w-full min-h-[574px] mt-[70px] p-[70px_20px] sm:p-[70px_40px]">
         <div class="bg-no-repeat w-full h-[574px] mt-[70px] " style="background-image: url(./img/img8.svg);">
             <div class="w-[90%] m-auto flex gap-[7px] items-center pt-[70px]">
                 <div>
@@ -82,18 +85,18 @@
                       </svg>
                 </div>
                 <div>
-                    <h1 class="font-family font-medium text-[40px] leading-[100%] text-[#f4f6f5]">Новая коллекция <br> французских авторов</h1>
+                    <h1 class="font-family font-medium text-[40px] leading-[100%] text-[#f4f6f5] sm:text-3xl md:text-4xl lg:text-[40px]">Новая коллекция <br> французских авторов</h1>
                 </div>
             </div>
             <div class="w-[90%] m-auto mt-[20px] font-family">
-                <p class="font-medium text-lg leading-[150%] text-[#fff]">Сложно сказать, почему акционеры крупнейших компаний <br> призывают нас к новым свершениям, которые, в свою <br> очередь, должны быть заблокированы в рамках своих <br> собственных рациональных ограничений. <br><br> 
-                Принимая во внимание показатели успешности, граница <br> обучения кадров предопределяет высокую <br> востребованность направлений прогрессивного развития.</p>
+                <p class="font-medium text-lg leading-[150%] text-[#fff] text-base sm:text-base md:text-lg">Сложно сказать, почему акционеры крупнейших компаний <br class="hidden md:block"> призывают нас к новым свершениям, которые, в свою <br class="hidden md:block"> очередь, должны быть заблокированы в рамках своих <br class="hidden md:block"> собственных рациональных ограничений. <br><br> 
+                Принимая во внимание показатели успешности, граница <br class="hidden md:block"> обучения кадров предопределяет высокую <br class="hidden md:block"> востребованность направлений прогрессивного развития.</p>
                 <button class="w-[257px] h-[65px] p-[20px_60px] bg-[#eedb6d] font-medium text-xl text-[#2c2d35] mt-[60px] hover:bg-[#598d66] hover:text-white">Ознакомиться</button>
             </div>
         </div>
     </section>
 
-    <section class="w-[90%] m-auto flex justify-between items-center mt-[150px]">
+    <section class="w-[90%] m-auto justify-between items-center mt-[150px] flex flex-col md:flex-row">
         <div class="relative">
             <img src="./img/km1.svg" alt="">
             <img src="./img/km2.svg" alt="" class="absolute top-[-78px] left-[48px]">
@@ -109,7 +112,7 @@
         </div>
     </section>
 
-    <footer class="w-[90%] m-auto flex justify-between mt-[60px]">
+    <footer class="w-[90%] m-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-y-10 gap-x-10 mt-[60px]">
         <div>
             <img src="./img/logo.svg" alt=""><br><br>
             <a class="font-family font-medium text-xl text-[#2c2d35] mb-[7px]" href="tel:+7 (999) 543-54-54">+7 (999) 543-54-54</a>
